@@ -32,4 +32,4 @@ IMPORTANT, YOU HAVE TO HAVE JDK 8 INSTALLED TO COMPILE THE PROYECTS PROPERLY
 • I have created a couple of script to record data and see the demo, this script will be executed automatically when the app-producer-cardsmanager is started, also I have configurate the scheduled tacks to execute every 10 second.
 You can monitories all the prosses by the console of eclipse or intellij and see the DDBB from http://localhost:8081/console and http://localhost:8082/console.
 
-• To run the web site, go to http://localhost:8081 after app-producer-cardsmanager was started.
+• To see the web site, go to http://localhost:8081 after app-producer-cardsmanager was started.
