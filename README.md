@@ -19,14 +19,14 @@ Java 8 • Spring boot • Spring web • Spring DATA-JPA •  spring JMS •  a
 
 IMPORTANT, YOU HAVE TO HAVE JDK 8 INSTALLED TO COMPILE THE PROYECTS PROPERLY 
 
-Step one: run ActiveMQ embedded, it is a plugin of maven, it is the proyect call jms-activemq-embedded.
+-- Step one: run ActiveMQ embedded, it is a plugin of maven, it is the proyect call jms-activemq-embedded.
 •	Got to the folder  jms-activemq-embedded and run the command 
 “mvn activemq:run” 
 
-Step two; run the application app-consumer-cardsnotifier.
+-- Step two; run the application app-consumer-cardsnotifier.
 •	Go to the class RunAppCardsNotifier and  run the main method.
 
-Step three; run The application app-producer-cardsmanager.
+-- Step three; run The application app-producer-cardsmanager.
 •	Go to the class RunAppCardsManager and  run the main method
 
 • I have created a couple of script to record data and see the demo, this script will be executed when the app-producer-cardsmanager is started, also I have configurate the  scheduled tacks and will execute every 10 second.
