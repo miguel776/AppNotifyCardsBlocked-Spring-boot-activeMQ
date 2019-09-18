@@ -2,7 +2,7 @@
 
 The follow repository contains two application and one ActiveMQ embedded to implement a system with the functionality of block credit cards and notify this by mail sending an excel with a list of blocked credit cards.
 
-•	Using spring boot each app will be deploy in different server embedded and both will have different DDBB h2 embedded, in the port 8081 and 8281 respectively.
+•	Using spring boot each app will be deploy in different server embedded and both will have different DDBB h2 embedded, in the port 8081 and 8082 respectively.
 
 •	The communication between app-producer-cardsmanager and application app-consumer-cardsnotifier will be by JMS, acting the app-producer-cardsmanager as a producer gluing messages in our ActiveMQ embedded and the application app-consumer-cardsnotifier will act as a consumer reading these messages.
 
