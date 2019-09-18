@@ -17,6 +17,8 @@ Java 8 • Spring boot • Spring web • Spring DATA-JPA •  spring JMS •  a
 
 ## Running the demo:  
 
+IMPORTANT, YOU HAVE TO HAVE JDK 8 INSTALLED TO COMPILE THE PROYECTS PROPERLY 
+
 Step one: run ActiveMQ embedded, it is a plugin of maven, it is the proyect call jms-activemq-embedded.
 •	Got to the folder  jms-activemq-embedded and run the command 
 “mvn activemq:run” 
