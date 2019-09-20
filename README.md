@@ -4,7 +4,7 @@ The follow repository contains two application and one ActiveMQ embedded to impl
 
 •	Using spring boot each app will be deploy in different server embedded and both will have different DDBB h2 embedded, in the port 8081 and 8082 respectively.
 
-•	The communication between app-producer-cardsmanager and application app-consumer-cardsnotifier will be by JMS, acting the app-producer-cardsmanager as a producer gluing messages in our ActiveMQ embedded and the application app-consumer-cardsnotifier will act as a consumer reading these messages.
+•	The communication between the applications app-producer-cardsmanager and app-consumer-cardsnotifier will be by JMS, acting the app-producer-cardsmanager as a producer gluing messages in our ActiveMQ embedded and the application app-consumer-cardsnotifier will act as a consumer reading these messages.
 
 •	The application app-producer-cardsmanager is going to execute a couple of tacks  periodically, one of this tack  is going to check the table CARD_APP_A and is going to block all the cards that expired, the other tack  will send this list to the application app-consumer-cardsnotifier. 
 
