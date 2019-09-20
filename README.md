@@ -6,6 +6,8 @@ The follow repository contains two application and one ActiveMQ embedded to impl
 
 •	The communication between the applications app-producer-cardsmanager and app-consumer-cardsnotifier will be by JMS, acting the app-producer-cardsmanager as a producer gluing messages in our ActiveMQ embedded and the application app-consumer-cardsnotifier will act as a consumer reading these messages.
 
+## functionality
+
 •	The application app-producer-cardsmanager is going to execute a couple of tacks  periodically, one of this tack  is going to check the table CARD_APP_A and is going to block all the cards that expired, the other tack  will send this list to the application app-consumer-cardsnotifier. 
 
 •	The application app-consumer-cardsnotifier is the responsible to send an excel with the cards blocked by mail, when this app read a message from active MQ will record the content to the table CARD_BLOCKED_APP, on the other hand there is a scheduled tack that will be execute periodically and  will read the table CARD_BLOCKED_APP and will send the messages  that haven´t sent it at the moment.
